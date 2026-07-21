@@ -8,8 +8,6 @@ Hệ thống xử lý phổ tần số thời gian thực sử dụng thuật to
 
 *(Bạn có thể chụp ảnh sơ đồ khối mô phỏng/sơ đồ thiết kế của bạn rồi kéo thả vào đây, hoặc dùng cú pháp sơ đồ dưới đây)*
 
-```text
-[ Input Data (Real/Imag) ] ---> [ fft_16pt / simple_fft ] ---> [ Xử lý phổ & Hiển thị ]
 
 ## 2. Mục lục các module (Module Index)
 
