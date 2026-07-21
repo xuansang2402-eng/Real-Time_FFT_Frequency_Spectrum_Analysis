@@ -7,6 +7,7 @@ Hệ thống xử lý phổ tần số thời gian thực sử dụng thuật to
 ## 1. Sơ đồ khối tổng quát
 
 *(Bạn có thể chụp ảnh sơ đồ khối mô phỏng/sơ đồ thiết kế của bạn rồi kéo thả vào đây, hoặc dùng cú pháp sơ đồ dưới đây)*
+![Uploading image.png…]()
 
 
 ## 2. Mục lục các module (Module Index)
