@@ -1,12 +1,12 @@
-# FFT 16-Point Design and Simulation (Verilog)
+# Real-Time FFT Frequency Spectrum Analysis (Verilog)
 
-Project thiết kế mạch biến đổi Fourier nhanh (FFT) 16 điểm sử dụng ngôn ngữ mô tả phần cứng Verilog và chạy mô phỏng trên Intel FPGA Starter Edition (ModelSim).
+Hệ thống xử lý phổ tần số thời gian thực sử dụng thuật toán Fast Fourier Transform (FFT) viết bằng ngôn ngữ Verilog HDL, thiết kế tối ưu cho các ứng dụng phần cứng FPGA.
 
-## Cấu trúc thư mục
-- `src/`: Chứa mã nguồn Verilog (Module FFT chính và Testbench).
-- `doc/`: Chứa hình ảnh kết quả sóng mô phỏng (Waveform).
+---
 
-## Hướng dẫn chạy mô phỏng trên ModelSim
-1. Mở ModelSim và tạo Project mới.
-2. Thêm các file từ thư mục `src/` vào project và tiến hành Compile.
-3. Chạy mô phỏng (Start Simulation) với file testbench tương ứng.
+## 1. Sơ đồ khối tổng quát
+
+*(Bạn có thể chụp ảnh sơ đồ khối mô phỏng/sơ đồ thiết kế của bạn rồi kéo thả vào đây, hoặc dùng cú pháp sơ đồ dưới đây)*
+
+```text
+[ Input Data (Real/Imag) ] ---> [ fft_16pt / simple_fft ] ---> [ Xử lý phổ & Hiển thị ]
