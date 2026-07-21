@@ -89,14 +89,10 @@ Hệ thống sử dụng các kịch bản testbench độc lập để kiểm c
 
 ---
 
+---
+
 ## 7. Kết quả thực nghiệm (Waveform Results)
 
-Dưới đây là kết quả mô phỏng dạng sóng thực tế trên phần mềm ModelSim cho module `tb_fft_mixed`:
+Kết quả mô phỏng dạng sóng thực tế trên phần mềm ModelSim cho module `tb_fft_mixed`:
 
-![Ket qua mo phong ModelSim](![Uploading Ảnh chụp màn hình 2026-07-21 122125.png…]()
-)
-
-* **Phân tích chi tiết trên sóng:**
-  * **`clk` & `rst_n`:** Hệ thống nhận xung nhịp và khởi động bình thường.
-  * **`done`:** Đã chuyển lên mức cao (xanh lá) báo hiệu mạch đã hoàn thành việc tính toán biến đổi FFT 16 điểm.
-  * **`dout_real` / `dout_imag`:** Xuất hiện các giá trị biên độ phổ tần số ngõ ra sau khi qua các tầng bướm phần cứng.
+![Ket qua mo phỏng ModelSim](Ảnh%20chụp%20màn%20hình%202026-07-21%20122125.png)
