@@ -95,4 +95,5 @@ Hệ thống sử dụng các kịch bản testbench độc lập để kiểm c
 
 Kết quả mô phỏng dạng sóng thực tế trên phần mềm ModelSim cho module `tb_fft_mixed`:
 
-![Ket qua mo phỏng ModelSim](Ảnh%20chụp%20màn%20hình%202026-07-21%20122125.png)
+![Ket qua mo phỏng ModelSim](waveform.png
+)
