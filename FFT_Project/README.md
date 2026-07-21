@@ -4,10 +4,14 @@ Hệ thống xử lý phổ tần số thời gian thực sử dụng thuật to
 
 ---
 
-## 1. Sơ đồ khối tổng quát
+## 1. khối tổng quát
+Hệ thống xử lý tín hiệu số này hiện thực hóa thuật toán Biến đổi Fourier Nhanh 16 điểm (16-point FFT) theo kiến trúc đường ống (pipelined Radix-2) bằng ngôn ngữ Verilog HDL. Thiết kế tập trung tối ưu hóa tài nguyên phần cứng, tốc độ xử lý và khả năng đồng bộ thông qua máy trạng thái hữu hạn (FSM).
 
-*(Bạn có thể chụp ảnh sơ đồ khối mô phỏng/sơ đồ thiết kế của bạn rồi kéo thả vào đây, hoặc dùng cú pháp sơ đồ dưới đây)*
-![Uploading image.png…]()
+**Đặc điểm kỹ thuật chính:**
+* **Thuật toán:** Decimation-in-Time (DIT) với cấu trúc đảo bit (Bit-Reversal) ở đầu vào.
+* **Cơ chế tính toán:** Kiến trúc pipeline đa tầng kết hợp khối tính toán cánh bướm (Butterfly Stages) và bộ nhớ ROM lưu hệ số quay (Twiddle Factor ROM).
+* **Giao diện tín hiệu:** Bao gồm xung nhịp (`clk`), tín hiệu kích hoạt reset (`rst_n`), tín hiệu bắt tay khởi động (`start`), luồng dữ liệu vào/ra (`din`, `dout`), và cờ báo hoàn thành (`done`).
+
 
 
 ## 2. Mục lục các module (Module Index)
@@ -88,8 +92,3 @@ Hệ thống sử dụng các kịch bản testbench độc lập để kiểm c
 
 ---
 
-## 7. Kết quả thực nghiệm (Waveform Results)
-
-Kết quả mô phỏng dạng sóng thực tế trên phần mềm ModelSim cho module `tb_fft_mixed`:
-
-![Ket qua mo phỏng ModelSim](https://drive.google.com/file/d/1yKX_RC0B0a6TMEBJZwsF539EAb8vWZpM/view?usp=sharing)
