@@ -87,13 +87,8 @@ Hệ thống sử dụng các kịch bản testbench độc lập để kiểm c
 
 ---
 
----
-
----
-
 ## 7. Kết quả thực nghiệm (Waveform Results)
 
 Kết quả mô phỏng dạng sóng thực tế trên phần mềm ModelSim cho module `tb_fft_mixed`:
 
-![Ket qua mo phỏng ModelSim](waveform.png
-)
+![Ket qua mo phỏng ModelSim](https://drive.google.com/file/d/1yKX_RC0B0a6TMEBJZwsF539EAb8vWZpM/view?usp=sharing)
